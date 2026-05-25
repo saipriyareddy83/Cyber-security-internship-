@@ -1,0 +1,15 @@
+text = input("Enter Text: ")
+
+encrypted = ""
+
+for char in text:
+    encrypted += chr(ord(char) + 3)
+
+print("Encrypted Text:", encrypted)
+
+decrypted = ""
+
+for char in encrypted:
+    decrypted += chr(ord(char) - 3)
+
+print("Decrypted Text:", decrypted)
